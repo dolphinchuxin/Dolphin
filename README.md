@@ -1,16 +1,16 @@
-# startbit
+# dolphin
 
-Blocks for Hiwonder startbit
+Blocks for dolphin
 ## License
 
 MIT
 
 ## Supported targets
 
-* for PXT/startbit
+* for PXT/dolphin
 (The metadata above is needed for package search.)
 
 ```package
-startbit=github:LOBOT-ROBOT/Startbit
+dolphin=github:dolphinchuxin/dolphin
 ```
 
