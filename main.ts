@@ -1,8 +1,8 @@
 /*
- startbit package
+ dolphin package
 */
 //% weight=10 icon="\uf013" color=#2896ff
-namespace startbit {
+namespace dolphin {
 
     export enum startbit_Colors {
         //% block="Red"
@@ -178,9 +178,9 @@ namespace startbit {
     }
 
     /**
-     * Startbit initialization, please execute at boot time
+     * dolphin initialization, please execute at boot time
     */
-    //% weight=100 blockId=startbit_Init block="Initialize Startbit"
+    //% weight=100 blockId=startbit_Init block="Initialize dolphin"
     export function startbit_Init() {
         startbit_initRGBLight();
         serial.redirect(
@@ -471,7 +471,7 @@ namespace startbit {
 
 	
     /**
-     * Send read startbit servos angle command
+     * Send read dolphin servos angle command
      */
     //% weight=99 blockId=startbit_readAngle block="Send |%servo|angle command "
     //% subcategory=Servo
@@ -488,10 +488,10 @@ namespace startbit {
 
 
     /**
-     * Do someting when Startbit receive angle
+     * Do someting when dolphin receive angle
      * @param body code to run when event is raised
      */
-    //% weight=97 blockId=onStartbit_getAngle blockGap=50 block="on Startbit|%servo|get angle"
+    //% weight=97 blockId=onStartbit_getAngle blockGap=50 block="on dolphin|%servo|get angle"
     //% subcategory=Servo
     export function onStartbit_getAngle(servo: startbit_Servos, body: Action) {
         control.onEvent(MESSAGE_ANGLE, servo, body);
@@ -603,7 +603,7 @@ namespace startbit {
     }
 
     /**
-     *  Get startbit current voltage,the unit is mV
+     *  Get dolphin current voltage,the unit is mV
     */
     //% weight=93 blockGap=50 blockId=startbit_getBatVoltage block="Get startbit current voltage (mV)"
     //% subcategory=Sensor
