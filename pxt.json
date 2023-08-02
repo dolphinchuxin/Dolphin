@@ -1,7 +1,7 @@
 {
-    "name": "startbit",
+    "name": "dolphin",
     "version": "0.0.1",
-    "description": "Blocks for Hiwonder startbit",
+    "description": "Blocks for dolphin",
     "license": "MIT",
     "dependencies": {
         "core": "*"
